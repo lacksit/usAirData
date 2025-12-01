@@ -1,0 +1,19 @@
+Package: usAirData
+Type: Package
+Title: US Airline Cost Data Tools
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Alexis", "Nguyen",
+      email = "alexisnguyen@usf.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: These functions work with US airline cost data and the dataset.
+    It includes tools to find the average cost, the highest cost, and 
+    a plot that shows cost over time.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+RoxygenNote: 7.3.3

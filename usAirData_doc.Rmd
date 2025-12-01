@@ -1,0 +1,57 @@
+---
+title: "usAirData Package"
+author: "Alexis Nguyen"
+date: "2025-11-30"
+output: html_document
+---
+## R Markdown
+
+```{r setup, message=FALSE}
+# load my package while I am working on it
+devtools::load_all()
+```
+
+## About This Package
+
+This package uses a US airline cost dataset and it includes three functions I added that:
+- Calculates the average cost
+- Finds the row with the highest cost
+- Shows a plot that shows cost over time
+I chose this dataset becaise it was easy for me to work with and I also enjoy the topic because it is related to travel and airlines. This made it more interesting. This ptoject helped me learn more about R and how creating a package goes, and how to add my own details and pizzazz.
+
+## Loading the Dataset
+
+```{r}
+data(airdata)
+head(airdata)
+```
+
+This shows the first few rows of the dataset which can make sure it loads in.
+
+## Average Cost Function
+
+```{r}
+avg_cost(airdata)
+```
+
+This functions calculates the average cost to the entire dataset.
+
+## Highest Cost Row
+
+```{r}
+highest_cost(airdata)
+```
+
+This function finds the row with the highest cost value.
+
+## Plot of Cost Over Time
+
+```{r}
+plot_cost_over_time(airdata)
+```
+
+This function makes a line plot that shows how cost changes over the years.
+
+## Reflection 
+
+This project helped me learn how to build a simple R package while adding my own elements to it.During this project I got to implement something I find interesting and enjoyable so it made the project go by faster. It was somewhat confusing at first, but everything came together at the end.
