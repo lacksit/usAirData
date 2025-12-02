@@ -18,3 +18,4 @@ avg_cost <- function(data) {
 
   mean(data$cost, na.rm = TRUE)
 }
+
